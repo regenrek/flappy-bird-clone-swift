@@ -7,11 +7,6 @@ options:
   generateEmptyDirectories: true
   createIntermediateGroups: true
 
-packages:
-  SwiftUI-Introspect:
-    url: https://github.com/siteline/SwiftUI-Introspect
-    from: 1.0.0
-
 targets:
   MyZunderApp:
     type: application
@@ -19,15 +14,13 @@ targets:
     sources: [MyZunderApp]
     settings:
       base:
-        SWIFT_VERSION: 5.9
+        SWIFT_VERSION: 5.10.1
         ENABLE_TESTABILITY: YES
-    dependencies:
-      - package: SwiftUI-Introspect
     info:
       path: Sources/Info.plist
       properties:
-        CFBundleShortVersionString: 1.0.0
-        CFBundleVersion: 1
+        CFBundleShortVersionString: "1.0.0"
+        CFBundleVersion: "1"
         UILaunchStoryboardName: LaunchScreen
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: true
