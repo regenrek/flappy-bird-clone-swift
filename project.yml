@@ -16,12 +16,7 @@ targets:
   MyZunderApp:
     type: application
     platform: iOS
-    sources:
-      - path: Sources
-        excludes:
-          - "**/.DS_Store"
-    resources:
-      - Resources
+    sources: [MyZunderApp]
     settings:
       base:
         SWIFT_VERSION: 5.9
