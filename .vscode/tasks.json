@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "xcodegen",
             "args": [
-                "generate"
+                "${workspaceFolder}/scripts/generate.sh"
             ],
             "problemMatcher": [],
             "group": {
