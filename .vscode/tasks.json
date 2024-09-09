@@ -2,6 +2,63 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Generate Xcode Project with XcodeGen",
+            "type": "shell",
+            "command": "xcodegen",
+            "args": [
+                "generate"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "label": "Build Swift Project",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "${input:xcodeproj}",
+                "-scheme",
+                "${input:scheme}",
+                "-configuration",
+                "Debug",
+                "clean",
+                "build"
+            ],
+            "problemMatcher": [
+                "$xcodebuild"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "runOptions": {
+                "runOn": "default"
+            }
+        },
+        {
             "label": "Run SwiftLint",
             "type": "shell",
             "command": "swiftlint",
@@ -24,6 +81,28 @@
             "runOptions": {
                 "runOn": "folderOpen"
             }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "xcodeproj",
+            "type": "pickString",
+            "description": "Select the Xcode project file",
+            "options": [
+                "todoapp.xcodeproj",
+                "anotherproject.xcodeproj"
+            ],
+            "default": "todoapp.xcodeproj"
+        },
+        {
+            "id": "scheme",
+            "type": "pickString",
+            "description": "Select the scheme to build",
+            "options": [
+                "MyZunderApp",
+                "AnotherScheme"
+            ],
+            "default": "MyZunderApp"
         }
     ]
 }

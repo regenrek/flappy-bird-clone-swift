@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "sswg.swift-lang"
+        "sswg.swift-lang",
+        "vknabel.vscode-swiftlint"
     ]
 }
