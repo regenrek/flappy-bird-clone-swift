@@ -16,17 +16,6 @@ opt_in_rules:
   - strict_fileprivate       # Enforce using `fileprivate` when appropriate
   - redundant_nil_coalescing # Avoid unnecessary nil coalescing
 
-# Set thresholds and limit values
-line_length:
-  warning: 120               # Warn if lines exceed 120 characters
-  ignores_comments: true
-  ignores_function_declarations: true
-
-severity:
-  warnings:                  # Treat warnings as important
-    - force_cast
-    - todo
-
 included:
   - Sources
   - Tests
@@ -38,7 +27,3 @@ excluded:
   - Generated
 
 reporter: "xcode"
-
-# File header template for consistent documentation
-file_header:
-  required: false            # Disable mandatory headers
