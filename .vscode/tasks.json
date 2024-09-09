@@ -4,7 +4,7 @@
         {
             "label": "Generate Xcode Project with XcodeGen",
             "type": "shell",
-            "command": "xcodegen",
+            "command": "shell",
             "args": [
                 "${workspaceFolder}/scripts/generate.sh"
             ],
