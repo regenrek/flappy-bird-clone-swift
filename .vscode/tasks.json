@@ -20,9 +20,6 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-            },
-            "runOptions": {
-                "runOn": "folderOpen"
             }
         },
         {
@@ -77,9 +74,6 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-            },
-            "runOptions": {
-                "runOn": "folderOpen"
             }
         }
     ],

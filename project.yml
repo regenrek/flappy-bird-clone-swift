@@ -2,8 +2,8 @@ name: MyZunderApp
 options:
   bundleIdPrefix: com.zunderai
   deploymentTarget:
-    iOS: 15.0
-  xcodeVersion: "15.0"
+    iOS: 17.0
+  xcodeVersion: "15.3"
   generateEmptyDirectories: true
   createIntermediateGroups: true
 
