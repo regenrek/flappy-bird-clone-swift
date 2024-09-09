@@ -1,0 +1,51 @@
+name: MyZunderApp
+options:
+  bundleIdPrefix: com.zunderai
+  deploymentTarget:
+    iOS: 15.0
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+  createIntermediateGroups: true
+  2323
+
+packages:
+  SwiftUI-Introspect:
+    url: https://github.com/siteline/SwiftUI-Introspect
+    from: 1.0.0
+
+targets:
+  MyZunderApp:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+        excludes:
+          - "**/.DS_Store"
+    resources:
+      - Resources
+    settings:
+      base:
+        SWIFT_VERSION: 5.9
+        ENABLE_TESTABILITY: YES
+    dependencies:
+      - package: SwiftUI-Introspect
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleShortVersionString: 1.0.0
+        CFBundleVersion: 1
+        UILaunchStoryboardName: LaunchScreen
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: true
+
+schemes:
+  MyZunderApp:
+    build:
+      targets:
+        MyZunderApp: all
+    run:
+      config: Debug
+
+configs:
+  Debug: debug
+  Release: release
