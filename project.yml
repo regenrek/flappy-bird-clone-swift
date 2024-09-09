@@ -6,7 +6,6 @@ options:
   xcodeVersion: "15.0"
   generateEmptyDirectories: true
   createIntermediateGroups: true
-  2323
 
 packages:
   SwiftUI-Introspect:
