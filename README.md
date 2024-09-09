@@ -27,14 +27,16 @@ Before you begin, ensure you have the following installed:
 
 2. Customize the `project.yml` file to match your project requirements.
 
-3. Use VS Code tasks to manage your project:
+3. Rund `chmod +x scripts/generate.sh`
+
+4. Use VS Code tasks to manage your project:
    - Generate Xcode Project: `CMD+SHIFT+B` > "Tasks: Run Task" > "Generate Xcode Project with XcodeGen"
    - Build Swift Project: `CMD+SHIFT+B` > "Tasks: Run Task" > "Build Swift Project"
    - Run SwiftLint: `CMD+SHIFT+B` > "Tasks: Run Task" > "Run SwiftLint"
 
    Note: The "Generate Xcode Project with XcodeGen" task runs automatically when you open the project folder.
 
-4. Open the generated `.xcodeproj` file and start developing!
+5. Open the generated `.xcodeproj` file and start developing!
 
 ## Project Structure
 
