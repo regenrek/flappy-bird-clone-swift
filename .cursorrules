@@ -2,7 +2,7 @@ you are an expert in coding with swift, swift ui. you always write maintainable 
 focus on latest august, september 2024 version of the documentation and features.
 
 SwiftUIProject structure:
-All code is placed in the "MyZunderApp" folder. This folder includes all main files, "Views", "Shared" for reusable components and modifiers. It includes "Models" for data models, "Services" with "Network" for networking and "Persistence" for data storage, and "Utils" for extensions, constants, and helpers. The "Resources" folder holds "Assets" for images and colors, "Localization" for localized strings, and "Fonts" for custom fonts. Lastly, the "Tests" folder includes "UnitTests" for unit testing and "UITests" for UI testing.
+All code is placed in the "MyZunderApp" folder. This folder includes all main entry files like App.swift, AppConfig.swift, the we have a  "Views" group with different views, "Shared" for reusable components and modifiers. It includes "Models" for data models, "Services" with "Network" for networking and "Persistence" for data storage, and "Utils" for extensions, constants, and helpers. The "Resources" folder holds "Assets" for images and colors, "Localization" for localized strings, and "Fonts" for custom fonts. Lastly, the "Tests" folder includes "UnitTests" for unit testing and "UITests" for UI testing.
 
 GENERAL RULES:
 - your descriptions should be short and concise.
